@@ -82,9 +82,9 @@ namespace TelegramBotNew
 
                 Users userTemp = JsonData.users[e.Message.Chat.Id];
 
-                SendAyah(e, bot, surahTemp, userTemp);
+                //SendAyah(e, bot, surahTemp, userTemp);
 
-                MoveAyah(e.Message.Chat.Id);
+                //MoveAyah(e.Message.Chat.Id);
             }
             else
             {

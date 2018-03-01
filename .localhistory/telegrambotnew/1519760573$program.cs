@@ -32,17 +32,18 @@ namespace TelegramBotNew
             }
 
 
-            try
-            {
-                bot.StartReceiving();
-                bot.OnMessage += Bot_OnMessage;
-                bot.OnCallbackQuery += Bot_OnCallbackQuery;
+            //try
+            //{
+            //bot.StartReceiving();
+            //bot.OnMessage += Bot_OnMessage;
+            //bot.OnCallbackQuery += Bot_OnCallbackQuery;
 
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message + "I GOT YOU");
-            }
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine(e.Message + "I GOT YOU");
+            //}
+            //bot.OnInlineQuery += Bot_OnInlineQuery;
             Console.ReadLine();
 
         }

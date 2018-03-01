@@ -43,6 +43,7 @@ namespace TelegramBotNew
             {
                 Console.WriteLine(e.Message + "I GOT YOU");
             }
+            bot.OnInlineQuery += Bot_OnInlineQuery;
             Console.ReadLine();
 
         }

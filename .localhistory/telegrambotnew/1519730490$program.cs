@@ -1,5 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Json;
+using System.Linq;
+using System.Net;
+using System.Text;
+using System.Threading.Tasks;
 using Telegram.Bot;
+using Telegram.Bot.Args;
+using Telegram.Bot.Types.ReplyMarkups;
+using System.Net.Http;
+using System.Data.SqlClient;
 
 namespace TelegramBotNew
 {
@@ -23,8 +34,8 @@ namespace TelegramBotNew
 
             try
             {
-                var botClient = new Telegram.Bot.TelegramBotClient("365015286:AAED8kb8oncNHdruQcDpTk_WaRNFjeHm8Lo");
-                bot = botClient;
+                bot = new TelegramBotClient("365015286:AAED8kb8oncNHdruQcDpTk_WaRNFjeHm8Lo");
+
             }
             catch (Exception e)
             {
@@ -32,17 +43,18 @@ namespace TelegramBotNew
             }
 
 
-            try
-            {
-                bot.StartReceiving();
-                bot.OnMessage += Bot_OnMessage;
-                bot.OnCallbackQuery += Bot_OnCallbackQuery;
+            //try
+            //{
+            //bot.StartReceiving();
+            //bot.OnMessage += Bot_OnMessage;
+            //bot.OnCallbackQuery += Bot_OnCallbackQuery;
 
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message + "I GOT YOU");
-            }
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine(e.Message + "I GOT YOU");
+            //}
+            //bot.OnInlineQuery += Bot_OnInlineQuery;
             Console.ReadLine();
 
         }
